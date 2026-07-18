@@ -428,3 +428,16 @@ input:checked + .slider:before {
     flex-direction: column;
   }
 }
+
+@media (max-width: 900px) {
+  /* Stack dashboard columns under smaller views */
+  div[style*="topRow"], div[style*="chartGrid"], div[style*="mainGrid"] {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 800px) {
+  div[style*="grid"] {
+    grid-template-columns: 1fr !important;
+  }
+}
